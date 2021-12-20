@@ -1,0 +1,896 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+.getInviteButton {
+  height: 40 px;
+  width: 158 px;
+  letter-spacing: 2px;
+  font-size: 12px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  word-spacing: -2 px;
+  font-weight: 700;
+  min-height: auto;
+  min-width: auto;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "DM Sans", sans-serif;
+  padding: 12px 23px;
+  cursor: pointer;
+}
+
+.getInviteButton:hover {
+  background-color: lightgray;
+  color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  color: black;
+}
+
+.navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 20px 44px;
+}
+
+.navBar #click {
+  display: none;
+}
+
+.navBar .menu-btn {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .navBar .menu-btn {
+    display: block;
+  }
+}
+
+.photoSnap-Logo {
+  cursor: pointer;
+}
+
+.navItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.navItems li {
+  padding: 0px 18px;
+  letter-spacing: 2px;
+  line-height: 25px;
+}
+
+.navItems li a {
+  color: black;
+  font-weight: 700;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+}
+
+.navItems li a::after {
+  content: "";
+  display: block;
+  margin-top: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 2px;
+  width: 0px;
+  background-color: black;
+}
+
+.navItems li a:hover::after {
+  width: 100%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.About-PhotoSnap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: wrap;
+      -ms-flex: wrap;
+          flex: wrap;
+}
+
+.About-PhotoSnap-context {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 54px;
+  background-color: #000000;
+  color: #ffffff;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
+  font-family: "DM Sans", sans-serif;
+}
+
+.About-PhotoSnap-context h1 {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 4.17px;
+  text-align: start;
+  margin-bottom: 21px;
+}
+
+.About-PhotoSnap-context p {
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: normal;
+  text-align: start;
+  margin-bottom: 41px;
+  opacity: 0.6;
+}
+
+.About-PhotoSnap-context .getInviteButton {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  border: 2px solid white;
+}
+
+.About-PhotoSnap-context .getInviteButton:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.About-PhotoSnap-context-2 {
+  background-color: white;
+  color: black;
+}
+
+.About-PhotoSnap-2 .getInviteButton {
+  background-color: black;
+  color: white;
+}
+
+.About-PhotoSnap-2 .getInviteButton:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+
+.About-PhotoSnap-img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 60%;
+          flex: 1 1 60%;
+}
+
+.About-PhotoSnap-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.stories-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+}
+
+.stories-box .story-box {
+  position: relative;
+  width: 25%;
+}
+
+.stories-box .story-box img {
+  width: 100%;
+  height: auto;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.stories-box .story-box img:hover {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+.stories-box .story-box .text-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: start;
+  position: absolute;
+  width: 80%;
+  height: 150px;
+  bottom: 30px;
+  left: 15px;
+  color: #ffffff;
+  font-family: "DM Sans", sans-serif;
+}
+
+.stories-box .story-box .text-box .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 60%;
+          flex: 1 1 60%;
+}
+
+.stories-box .story-box .text-box .text h3 {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 700;
+}
+
+.stories-box .story-box .text-box .text h5 {
+  font-size: 10px;
+  line-height: 25px;
+}
+
+.stories-box .story-box .text-box .text a {
+  color: white;
+}
+
+.stories-box .story-box .text-box .text a h4 {
+  margin-top: 20px;
+  letter-spacing: 2px;
+  word-spacing: -2px;
+  font-weight: 700;
+  line-height: 12px;
+  font-size: 13px;
+  border: 1px solid black;
+  cursor: pointer;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  padding: 8px;
+}
+
+.stories-box .story-box .text-box .text a h4:hover {
+  background-color: black;
+}
+
+.stories-box .story-box .text-box .story-button {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 2px;
+  word-spacing: -2px;
+  font-weight: 700;
+  line-height: 12px;
+  font-size: 13px;
+  border: 1px solid black;
+  cursor: pointer;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.stories-box .story-box .text-box .story-button:hover {
+  background-color: black;
+}
+
+.photoSnap-features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-family: "DM Sans", sans-serif;
+  padding: 90px 102px;
+}
+
+.photoSnap-features .photoSnap-feature {
+  margin: 0px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.photoSnap-features .photoSnap-feature .feature-img {
+  margin-bottom: 49px;
+}
+
+.photoSnap-features .photoSnap-feature .feature-title {
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: normal;
+  font-weight: 700;
+}
+
+.photoSnap-features .photoSnap-feature .feature-text {
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: normal;
+  text-align: center;
+  opacity: 0.6;
+}
+
+.photoSnap-features .photoSnap-feature .img-no-limit {
+  height: 72px;
+}
+
+.footer {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: "DM Sans", sans-serif;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 64px 165px;
+}
+
+.footer .footer-social-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footer-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 121px;
+}
+
+.footer .footer-socials .footer-social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .footer-socials .footer-social-icons img {
+  height: 20px;
+  width: 21px;
+  margin: 6px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.footer .footer-socials .footer-social-icons img:hover {
+  -webkit-filter: brightness(1) invert(0);
+          filter: brightness(1) invert(0);
+}
+
+.footer .footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: left;
+  height: 121px;
+  margin-left: 109px;
+}
+
+.footer .footer-nav a {
+  color: white;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.footer .footer-nav a:hover {
+  opacity: 0.6;
+}
+
+.footer .footer-copyrights {
+  height: 121px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+.footer .footer-copyrights .getInviteButton {
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.footer .footer-copyrights .getInviteButton:hover {
+  background-color: white;
+  color: black;
+}
+
+.footer .footer-copyrights .copyright {
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.story-hero-section {
+  position: relative;
+  background-color: #0d1f2d;
+}
+
+.story-hero-section .story-section-textbox {
+  position: absolute;
+  background-color: yellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 387px;
+  color: white;
+  bottom: 50px;
+  left: 100px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.story-hero-section .story-section-textbox .hero-story-title {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  font-weight: 700;
+  letter-spacing: 4.17;
+  line-height: 48px;
+}
+
+.story-hero-section .story-section-textbox .hero-story-caption {
+  width: 100%;
+  margin-bottom: 24px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 17px;
+}
+
+.story-hero-section .story-section-textbox .hero-story-description {
+  opacity: 0.6;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.story-hero-section img {
+  height: auto;
+  width: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .story-hero-section .story-section-textbox {
+    padding-top: 80px;
+    bottom: 0;
+    left: 10px;
+  }
+}
+
+.feature-hero-title {
+  width: 100%;
+}
+
+.features {
+  padding-top: 0px;
+}
+
+.price-section {
+  font-family: "DM Sans", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 120px;
+}
+
+.price-card {
+  background-color: #f5f5f5;
+  padding: 56px 40px 40px;
+  border: 1px solid black;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.price-card .price-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.price-card .price-type .price-title {
+  font-size: 24px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: normal;
+  margin-bottom: 18px;
+  font-weight: 700;
+}
+
+.price-card .price-type .price-description p {
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: normal;
+  margin-bottom: 37px;
+  opacity: 0.8;
+}
+
+.price-card .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.price-card .price .total-price h1 {
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: 4.17px;
+}
+
+.price-card .price .total-price p {
+  margin-bottom: 40px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.price-card .price .plan-button {
+  width: 60%;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.price-card .price .plan-button:hover {
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+}
+
+.price-card-black {
+  margin: 0px 25px;
+  background-color: black;
+  color: white;
+}
+
+.price-card-black .plan-button-black {
+  width: 60%;
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+
+.price-card-black .plan-button-black:hover {
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 767.98px) {
+  .About-PhotoSnap-context {
+    padding: 20px 54px;
+  }
+  .stories-box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .stories-box .story-box {
+    width: 50%;
+  }
+  .photoSnap-features {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .photoSnap-features .feature-img {
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .photoSnap-features .feature-title {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .price-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .price-section .price-card {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .About-PhotoSnap-context {
+    padding: 35px 54px;
+  }
+  .price-section {
+    margin: 20px;
+  }
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer .footer-social-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .footer-social-nav .footer-social {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer .footer-social-nav .footer-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 0;
+  }
+  .footer .footer-copyrights {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer .footer-copyrights .getInviteButton {
+    width: 158px;
+    height: 40px;
+  }
+  .footer .footer-copyrights .copyright {
+    line-height: normal;
+    margin-top: 20px;
+  }
+  .photoSnap-feature {
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .About-PhotoSnap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .About-PhotoSnap-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .menu-btn {
+    display: block;
+  }
+  .navBar {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navBar .getInviteButton {
+    display: none;
+  }
+  .navBar ul {
+    position: fixed;
+    top: 60px;
+    left: -100%;
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    z-index: 2;
+    text-align: center;
+    padding: 40px;
+    display: none;
+  }
+  .navBar ul li {
+    margin: 40px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  #click:checked ~ ul {
+    left: 0%;
+    display: block;
+  }
+  #click:checked ~ .menu-btn ::before {
+    content: "\f00d";
+  }
+}
+/*# sourceMappingURL=main.css.map */

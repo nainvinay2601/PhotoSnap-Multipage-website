@@ -1,0 +1,15 @@
+// ----------------------------BASICS--------------------------------------------
+@import "Basics/buttons";
+@import "Basics/links";
+@import "Basics/resets";
+@import "Basics/typography";
+//----------------------------HELPERS----------------------------------------------
+@import "Helpers/variables";
+@import "Helpers/mixins";
+@import "Helpers/function";
+// ----------------------------PAGES-------------------------------------
+@import "Pages/homePage";
+@import "Pages/stories";
+@import "Pages/features";
+@import "Pages/pricing";
+@import "Pages/mediaQueries";

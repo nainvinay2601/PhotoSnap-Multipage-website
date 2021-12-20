@@ -1,0 +1,28 @@
+// FONTS AND ALL FONT-STYLES
+// 1-importing google font
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+// 2-making variable for imported font family
+$primaryFont: "DM Sans",
+sans-serif;
+// nav-LINks
+$navLinks: 12px;
+$navLinksSpace: 2px;
+$navLinksLineHeight: 25px;
+// TITlE SECTION
+$titleFont: 40px;
+$titleFontSpace: 4.17px;
+$titleLineHeight: 48px;
+// DESCRIPTION SECTION
+$descriptionFont: 15px;
+$descriptionFontSpace: normal;
+$descriptionFontLineHeight: 25px;
+// STORY  SECTION
+$storyTitle: 20px;
+$storyAuthor: 10px;
+$storyLink: 13px;
+$storyTextLineHeight: 25px;
+// FEATURE SECTION
+$featureTitleFont: 18px;
+$featureTextFont: 15px;
+$featureFontLineHeight: 25px;
+$featureFontSpace: normal;

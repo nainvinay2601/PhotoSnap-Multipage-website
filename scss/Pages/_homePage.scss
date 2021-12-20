@@ -1,0 +1,308 @@
+@import "../Helpers/mixins";
+@import "../Basics/typography";
+.navBar {
+    @include commonFlexProp;
+    background-color: $primaryWhite;
+    width: 100%;
+    padding: 20px 44px;
+    #click {
+        display: none;
+    }
+    .menu-btn {
+        display: none;
+    }
+    @media (max-width: 767.98px) {
+        .menu-btn {
+            display: block;
+        }
+    }
+}
+
+.photoSnap-Logo {
+    cursor: pointer;
+}
+
+.navItems {
+    @include commonFlexProp;
+    li {
+        padding: 0px 18px;
+        letter-spacing: $navLinksSpace;
+        line-height: $navLinksLineHeight;
+        a {
+            color: black;
+            font-weight: 700;
+            transition: 0.25s all;
+            &::after {
+                content: "";
+                display: block;
+                margin-top: 3px;
+                margin-left: auto;
+                margin-right: auto;
+                height: 2px;
+                width: 0px;
+                background-color: black;
+            }
+            &:hover {
+                &::after {
+                    width: 100%;
+                    transition: all 0.4s;
+                }
+            }
+        }
+    }
+}
+
+// ---------------------------about---section------------------
+.About-PhotoSnap {
+    display: flex;
+    flex: wrap;
+}
+
+.About-PhotoSnap-context {
+    @include aboutFlexProp;
+    flex-direction: column;
+    padding: 0 54px;
+    background-color: $primaryBlack;
+    color: $primaryWhite;
+    flex: 1 1 40%;
+    font-family: $primaryFont;
+    h1 {
+        font-size: $titleFont;
+        line-height: $titleLineHeight;
+        letter-spacing: $titleFontSpace;
+        text-align: start;
+        margin-bottom: 21px;
+    }
+    p {
+        font-size: $descriptionFont;
+        line-height: $descriptionFontLineHeight;
+        letter-spacing: $descriptionFontSpace;
+        text-align: start;
+        margin-bottom: 41px;
+        opacity: 0.6;
+    }
+    .getInviteButton {
+        align-self: flex-start;
+        display: flex;
+        color: white;
+        border: 2px solid white;
+        &:hover {
+            background-color: $primaryWhite;
+            color: black;
+        }
+    }
+}
+
+.About-PhotoSnap-context-2 {
+    background-color: white;
+    color: black;
+}
+
+.About-PhotoSnap-2 .getInviteButton {
+    background-color: black;
+    color: white;
+    &:hover {
+        background-color: white;
+        border: 1px solid black;
+        color: black;
+    }
+}
+
+.About-PhotoSnap-img {
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    flex: 1 1 60%;
+}
+
+// -----------------------stories-box--------------section----------------------
+.stories-box {
+    display: flex;
+    background-color: black;
+    .story-box {
+        position: relative;
+        width: 25%;
+        img {
+            width: 100%;
+            height: auto;
+            transition: 0.5s all;
+            &:hover {
+                transform: translateY(-20px);
+            }
+        }
+        .text-box {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-evenly;
+            flex-direction: column;
+            flex-wrap: wrap;
+            text-align: start;
+            position: absolute;
+            width: 80%;
+            height: 150px;
+            bottom: 30px;
+            left: 15px;
+            color: $primaryWhite;
+            font-family: $primaryFont;
+            .text {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                flex: 1 1 60%;
+                h3 {
+                    font-size: $storyTitle;
+                    line-height: 25px;
+                    font-weight: 700;
+                }
+                h5 {
+                    font-size: $storyAuthor;
+                    line-height: 25px;
+                }
+                a {
+                    color: white;
+                    h4 {
+                        margin-top: 20px;
+                        letter-spacing: 2px;
+                        word-spacing: -2px;
+                        font-weight: 700;
+                        line-height: 12px;
+                        font-size: $storyLink;
+                        border: 1px solid black;
+                        cursor: pointer;
+                        transition: 0.5s all;
+                        padding: 8px;
+                        &:hover {
+                            background-color: black;
+                        }
+                    }
+                }
+            }
+            .story-button {
+                flex: 1 1 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                letter-spacing: 2px;
+                word-spacing: -2px;
+                font-weight: 700;
+                line-height: 12px;
+                font-size: $storyLink;
+                border: 1px solid black;
+                cursor: pointer;
+                transition: 0.5s all;
+                &:hover {
+                    background-color: black;
+                }
+            }
+        }
+    }
+}
+
+// -----------------------------------------features-section-----------------------------
+.photoSnap-features {
+    @include commonFlexProp;
+    justify-content: space-evenly;
+    font-family: $primaryFont;
+    padding: 90px 102px;
+    .photoSnap-feature {
+        margin: 0px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .feature-img {
+            margin-bottom: 49px;
+        }
+        .feature-title {
+            margin-bottom: 16px;
+            font-size: $featureTitleFont;
+            line-height: $featureFontLineHeight;
+            letter-spacing: $featureFontSpace;
+            font-weight: 700;
+        }
+        .feature-text {
+            font-size: $featureTextFont;
+            line-height: $featureFontLineHeight;
+            letter-spacing: $featureFontSpace;
+            text-align: center;
+            opacity: 0.6;
+        }
+        .img-no-limit {
+            height: 72px;
+        }
+    }
+}
+
+// -----------------------------------------footer-section----------------------------
+.footer {
+    background-color: black;
+    @include commonFlexProp;
+    font-family: $primaryFont;
+    justify-content: space-between;
+    padding: 64px 165px;
+    .footer-social-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-socials {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 121px;
+        .footer-social-icons {
+            display: flex;
+            img {
+                height: 20px;
+                width: 21px;
+                margin: 6px;
+                transition: all 0.3s ease-in-out;
+                filter: brightness(0) invert(1);
+                &:hover {
+                    filter: brightness(1) invert(0);
+                }
+            }
+        }
+    }
+    .footer-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left;
+        height: 121px;
+        margin-left: 109px;
+        a {
+            color: white;
+            transition: 0.5s all;
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
+    .footer-copyrights {
+        height: 121px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: white;
+        .getInviteButton {
+            border: 2px solid white;
+            background-color: black;
+            color: white;
+            text-align: center;
+            &:hover {
+                background-color: white;
+                color: black;
+            }
+        }
+        .copyright {
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            opacity: 0.8;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+@import "../Basics/typography";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// body {
+//     background-image: url("/Images/HOMEPAGE/presence.f7920813\ -\ Copy.png");
+// }
+// ----------------a tags -------------------------
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    font-family: $primaryFont;
+    font-size: $navLinks;
+    color: black;
+}

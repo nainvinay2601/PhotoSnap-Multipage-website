@@ -1,0 +1,131 @@
+@media (max-width: 767.98px) {
+    .About-PhotoSnap-context {
+        padding: 20px 54px;
+    }
+    .stories-box {
+        flex-wrap: wrap;
+        .story-box {
+            width: 50%;
+        }
+    }
+    .photoSnap-features {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .feature-img {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .feature-title {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    // .story-hero-section {
+    //     position: relative;
+    // }
+    // .story-section-textbox {
+    //     // min-width: 200px;
+    //     // min-height: 200px;
+    //     position: absolute;
+    // }
+}
+
+@media (max-width: 800px) {
+    .price-section {
+        flex-direction: column;
+        .price-card {
+            margin: 20px;
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    .About-PhotoSnap-context {
+        padding: 35px 54px;
+    }
+    .price-section {
+        margin: 20px;
+    }
+    .footer {
+        flex-direction: column;
+        justify-content: space-between;
+        .footer-social-nav {
+            flex-direction: column;
+            .footer-social {
+                justify-content: center;
+                align-items: center;
+            }
+            .footer-nav {
+                flex-direction: row;
+                align-items: center;
+                margin-left: 0;
+            }
+        }
+        .footer-copyrights {
+            justify-content: center;
+            align-items: center;
+            .getInviteButton {
+                width: 158px;
+                height: 40px;
+            }
+            .copyright {
+                line-height: normal;
+                margin-top: 20px;
+            }
+        }
+    }
+    .photoSnap-feature {
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .About-PhotoSnap {
+        flex-direction: column;
+    }
+    .About-PhotoSnap-2 {
+        flex-direction: column-reverse;
+    }
+}
+
+// ============================responsive navbar===============================
+@media (max-width: 767.98px) {
+    .menu-btn {
+        display: block;
+    }
+    .navBar {
+        justify-content: space-between;
+    }
+    .navBar .getInviteButton {
+        display: none;
+    }
+    .navBar ul {
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        background-color: white;
+        height: 100vh;
+        width: 100vw;
+        display: block;
+        z-index: 2;
+        text-align: center;
+        padding: 40px;
+        display: none;
+    }
+    .navBar ul li {
+        margin: 40px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    #click:checked~ul {
+        left: 0%;
+        display: block;
+    }
+    #click:checked~.menu-btn ::before {
+        content: "\f00d";
+    }
+}

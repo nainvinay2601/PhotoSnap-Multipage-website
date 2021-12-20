@@ -1,0 +1,20 @@
+@mixin gradientLine {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    background: linear-gradient(#5a77ff, #bc7198, #ffc593);
+}
+
+@mixin commonFlexProp {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@mixin aboutFlexProp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

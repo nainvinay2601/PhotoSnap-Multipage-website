@@ -1,0 +1,138 @@
+@import "../Helpers/mixins";
+@import "../Basics/typography";
+.story-hero-section {
+    position: relative;
+    background-color: #0d1f2d;
+    // width: 100%;
+    // height: 100%;
+    .story-section-textbox {
+        position: absolute;
+        background-color: yellow;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // max-height: 150px;
+        width: 387px;
+        color: white;
+        bottom: 50px;
+        left: 100px;
+        font-family: $primaryFont;
+        .hero-story-title {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+            font-weight: 700;
+            letter-spacing: 4.17;
+            line-height: 48px;
+        }
+        .hero-story-caption {
+            width: 100%;
+            margin-bottom: 24px;
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 17px;
+        }
+        .hero-story-description {
+            opacity: 0.6;
+            font-size: 15px;
+            line-height: 25px;
+        }
+    }
+    img {
+        height: auto;
+        width: 100%;
+    }
+    @media (max-width: 767.98px) {
+        .story-section-textbox {
+            padding-top: 80px;
+            bottom: 0;
+            left: 10px;
+        }
+    }
+}
+
+// .stories-box {
+//     display: flex;
+//     flex-wrap: wrap;
+//     flex-direction: row;
+//     .story-box {
+//         width: 25%;
+//         // border: 1px solid black;
+//         // padding: 1px;
+//         // margin-bottom: 10px;
+//         position: relative;
+//         img {
+//             width: 100%;
+//             height: auto;
+//             transition: 0.5s all;
+//             &:hover {
+//                 transform: translateY(-20px);
+//             }
+//         }
+//         .text-box {
+//             display: flex;
+//             align-items: flex-start;
+//             justify-content: space-evenly;
+//             flex-direction: column;
+//             flex-wrap: wrap;
+//             text-align: start;
+//             position: absolute;
+//             width: 80%;
+//             height: 150px;
+//             bottom: 30px;
+//             left: 15px;
+//             color: $primaryWhite;
+//             font-family: $primaryFont;
+//             .text {
+//                 display: flex;
+//                 flex-direction: column;
+//                 justify-content: flex-end;
+//                 flex: 1 1 60%;
+//                 h3 {
+//                     font-size: $storyTitle;
+//                     line-height: 25px;
+//                     font-weight: 700;
+//                 }
+//                 h5 {
+//                     font-size: $storyAuthor;
+//                     line-height: 25px;
+//                 }
+//                 a {
+//                     color: white;
+//                     h4 {
+//                         margin-top: 20px;
+//                         letter-spacing: 2px;
+//                         word-spacing: -2px;
+//                         font-weight: 700;
+//                         line-height: 12px;
+//                         font-size: $storyLink;
+//                         border: 1px solid black;
+//                         cursor: pointer;
+//                         transition: 0.5s all;
+//                         padding: 8px;
+//                         &:hover {
+//                             background-color: black;
+//                         }
+//                     }
+//                 }
+//             }
+//             .story-button {
+//                 flex: 1 1 40%;
+//                 display: flex;
+//                 flex-direction: column;
+//                 justify-content: center;
+//                 letter-spacing: 2px;
+//                 word-spacing: -2px;
+//                 font-weight: 700;
+//                 line-height: 12px;
+//                 font-size: $storyLink;
+//                 border: 1px solid black;
+//                 cursor: pointer;
+//                 transition: 0.5s all;
+//                 &:hover {
+//                     background-color: black;
+//                 }
+//             }
+//         }
+//     }
+// }
